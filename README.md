@@ -5,15 +5,17 @@ This project demonstrates a complete implementation of a full duplex pipe for pr
 
 ## Usage
 
+```bash
 NamedPipeServer server = new NamedPipeServer();
 server.StartListening();
 await server.SendMessageAsync("Message from server side");
+```
 
-
+```bash
 NamedPipeClient client = new NamedPipeClient();
 client.StartListening();
 client.SendMessageAsync("Message from client side");
-		
+```		
 		
 ### Prerequisites
 
